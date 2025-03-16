@@ -1,0 +1,176 @@
+/* Fire Particle Effect */
+.particle {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, rgba(0,0,0,0.8) 10%, rgba(0,0,0,0) 80%);
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(5px);
+    opacity: 0.8;
+    animation: fadeOut 0.6s linear forwards;
+    will-change: transform, opacity;
+}
+
+/* Particle fade-out animation */
+@keyframes fadeOut {
+    0% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(3);
+    }
+}
+
+/* Hiệu ứng Fade-in */
+.fade-in {
+    opacity: 0; /* Ẩn nội dung ban đầu */
+    transform: translateY(30px); /* Đẩy xuống một chút để tạo hiệu ứng trượt lên */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Khi phần tử xuất hiện trên màn hình */
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* General Styles */
+body {
+    color: #7f886a;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: left;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+h2{
+    color: #3e503c;
+}
+
+/* Header with Background Image */
+header {
+    background: url('header-bg.jpg') no-repeat center center/cover;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-content {
+    background: rgba(0, 0, 0, 0.5); /* Màu nền trong suốt để dễ đọc */
+    padding: 20px;
+}
+
+
+
+
+/* Navigation */
+nav ul {
+    text-align: center;
+    background: #ff6f3d;
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 8px;
+    transition: all 0.3s ease-in-out; /* Hiệu ứng mượt khi hover */
+}
+
+/* Hover Effect */
+.hover-4 {
+  border: 8px solid;
+  border-image: repeating-linear-gradient(135deg,#F8CA00 0 10px,#E97F02 0 20px,#BD1550 0 30px) 8;
+  -webkit-mask: 
+    conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+     var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+    conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
+     0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+    linear-gradient(#000 0 0) padding-box no-repeat;
+  transition: .3s, -webkit-mask-position .3s .3s;
+}
+.hover-4:hover {
+  --_i: 100%;
+  color: #CC333F;
+  transition: .3s, -webkit-mask-size .3s .3s;
+}
+button {
+    background: none;  /* Xóa nền */
+    border: none;  /* Xóa viền */
+    outline: none;  /* Xóa viền khi bấm vào */
+    font-weight: bold; 
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+button:focus{
+    outline: none;
+}
+/* Main Content */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px #aaa;
+}
+.container details p{
+    color: blue;
+}
+
+/* Slide Container */
+.slider {
+    position: relative;
+    height: 27vh;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Slide Wrapper */
+.slides {
+    display: flex;
+    width: 500%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 20%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}

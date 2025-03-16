@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du lịch Bảo Lộc</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Header Section with Background Image -->
+    <header>
+        <div class="header-content">
+            <section class="fade-in">
+            <h1>Khám phá Bảo Lộc</h1>
+            <p>Thành phố Cao Nguyên Xanh</p>
+            </section>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><button onclick="smoothTransition('index.html')" class="hover-4" ><i class="fas fa-home"></i>Trang chu</button></li>
+            <li><button onclick="smoothTransition('diem-den.html')" class="hover-4" >Diem den</button></li>
+            <li><button onclick="smoothTransition('am-thuc.html')" class="hover-4" >Am thuc</button></li>
+            <li><button onclick="smoothTransition('hoat-dong.html')" class="hover-4" >Hoat dong</button></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="container">
+        
+        <h2>Bảo Lộc – viên ngọc xanh của Tây Nguyên ,</h2>
+        <p>Bảo Lộc là một trong những thành phố cao nguyên xinh đẹp của tỉnh Lâm Đồng, được thiên nhiên ưu ái ban tặng khí hậu mát mẻ quanh năm. Nơi đây không chỉ nổi tiếng với những đồi chè bạt ngàn, trải dài như một tấm thảm xanh mướt mà còn sở hữu những thác nước hùng vĩ, mang vẻ đẹp hoang sơ và kỳ bí. </p>
+        <p>Với địa hình đồi núi trập trùng, Bảo Lộc đem đến cho du khách không gian yên bình, trong lành, thích hợp để nghỉ dưỡng, thư giãn và hòa mình vào thiên nhiên. Những địa điểm như đồi chè Tâm Châu, thác Dambri, hồ Nam Phương hay chùa Linh Quy Pháp Ấn không chỉ là điểm tham quan hấp dẫn mà còn mang trong mình những câu chuyện lịch sử, văn hóa độc đáo.  </p>
+        <p>Nếu bạn là người yêu thích du lịch sinh thái và muốn tìm kiếm những khoảnh khắc bình yên giữa thiên nhiên, hãy đến với Bảo Lộc để tận hưởng bầu không khí trong lành, thưởng thức những ly trà thơm ngon và khám phá vẻ đẹp đầy mê hoặc của thành phố cao nguyên này!</p>
+       
+        <ul>
+            <li>Khí hậu ôn hòa quanh năm</li>
+            <li>Vùng đất trà và cà phê trứ danh</li>
+            <li>Nhiều điểm đến hoang sơ, yên bình</li>
+        </ul>
+        <details>
+            <p>🔗 Khám phá ngay</p>
+        </details>
+       
+    </section>
+    
+            <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>Liên hệ & Hỗ trợ du lịch</h3>
+                <p>☎ <b>Hotline:</b> 0123 456 789</p>
+                <p>📍 <b>Địa chỉ:</b> Trung tâm du lịch Bảo Lộc, Lâm Đồng</p>
+                <p>📧 <b>Email:</b> <a href="mailto:contact@baoloctravel.com">contact@baoloctravel.com</a></p>
+                <p>🌐 <b>Website:</b> <a href="https://www.baoloctravel.com" target="_blank">www.baoloctravel.com</a></p>
+            </div>
+
+            <div class="contact-form">
+                <h3>Form liên hệ trực tuyến</h3>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Họ và Tên:</label>
+                    <input type="text" id="name" name="name" placeholder="Nhập họ tên của bạn" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+                    <br>
+                    <label for="message">Nội dung tin nhắn:</label>
+                    <textarea id="message" name="message" placeholder="Nhập nội dung..." required></textarea>
+                    
+                    <button type="submit">Gửi</button>
+                </form>
+            </div>
+        </div>
+        
+        <p class="copyright">&copy; 2025 Bảo Lộc Travel | Designed by DoThanhCong</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
